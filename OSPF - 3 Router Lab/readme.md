@@ -12,7 +12,7 @@ Routers:
 
 ## 📡 Topology
 
-<img width="620" height="136" alt="image" src="https://github.com/user-attachments/assets/6cf6d942-d233-48c4-868e-1133bd1b76b0" />
+<img width="620" height="136" alt="image" src="https://github.com/user-attachments/assets/0947ee3d-023e-473e-bd39-abbff11156af" />
 
 ---
 
