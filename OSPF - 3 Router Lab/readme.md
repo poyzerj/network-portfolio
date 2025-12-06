@@ -1,67 +1,13 @@
-OSPF 3-Router Lab
-📌 Overview
+# OSPF 3-Router Lab
 
-This lab demonstrates OSPF adjacency formation, neighbor discovery, and route exchange using a 3-router topology.
+## 📌 Overview
+This lab demonstrates **OSPF adjacency formation, neighbor discovery, and route exchange** using a 3-router straight-line topology. All routers are configured in **Area 0**, and each router uses its **loopback interface as its OSPF router ID**.
 
-Routers:
+Routers:  
+- R1 – Router ID: 1.1.1.1  
+- R2 – Router ID: 2.2.2.2  
+- R3 – Router ID: 3.3.3.3  
 
-R1
+---
 
-R2
-
-R3
-
-Each router participates in OSPF Area 0 (or whichever areas you used).
-
-📡 Topology
-
-(Insert your topology screenshot as topology.png)
-
-🔧 Objectives
-
-Configure IP addresses on all routers
-
-Enable OSPF process
-
-Advertise loopbacks and connected networks
-
-Verify neighbor adjacencies
-
-Validate OSPF routes in the routing table
-
-🧪 Commands Used
-
-Key verification commands:
-
-show ip ospf neighbor
-show ip route ospf
-show ip protocols
-show ip ospf interface
-
-📈 Results
-
-All three routers formed full OSPF adjacencies
-
-All loopback prefixes are reachable
-
-Convergence confirmed via routing table and ping tests
-
-📁 Configuration Files
-
-R1.txt
-
-R2.txt
-
-R3.txt
-
-📝 Notes / What I Learned
-
-(Write 2–3 bullets about what you learned, for example:)
-
-How OSPF forms adjacencies using hello packets
-
-How DR/BDR elections occur on multi-access networks
-
-How network statements and wildcard masks work
-
-How LSAs propagate routes across the topology
+## 📡 Topology
