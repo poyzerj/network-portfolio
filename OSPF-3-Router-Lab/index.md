@@ -45,8 +45,8 @@ ping <loopback-address>
 
 ## 📁 Configuration Files
 - [R1.txt](https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/OSPF-3-Router-Lab/R1.txt) – OSPF and IP configuration
-- `R2.txt` – OSPF and IP configuration  
-- `R3.txt` – OSPF and IP configuration  
+- [R2.txt](https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/OSPF-3-Router-Lab/R2.txt) – OSPF and IP configuration  
+- [R3.txt](https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/OSPF-3-Router-Lab/R3.txt) – OSPF and IP configuration  
 
 ---
 
