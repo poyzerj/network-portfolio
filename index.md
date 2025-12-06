@@ -1,3 +1,5 @@
+theme: jekyll-default-layout
+
 # Joe Poyzer – Network Engineer Portfolio
 
 Welcome! This portfolio highlights my hands-on network engineering projects, labs, and automation work.
