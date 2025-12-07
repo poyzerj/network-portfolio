@@ -41,4 +41,4 @@ Welcome! This portfolio highlights my hands-on network engineering projects, lab
 - VLAN Lab (coming soon)  
 
 ## Contact
-- LinkedIn: [linkedin.com/in/poyzerj](https://www.linkedin.com/in/poyzerj)
+- LinkedIn: [linkedin.com/in/jpoyzer](https://www.linkedin.com/in/jpoyzer)
