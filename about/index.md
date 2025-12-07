@@ -25,7 +25,7 @@ author_profile: true
 
 <div class="about-content">
 
-<h2>Hello, I'm Joe Poyzer</h2>
+<h2>Hello, I'm Joe Poyzer.</h2>
 
 <p>I'm a Network Engineer with almost 7 years of experience in managed services, technical support, and network administration. I specialize in designing, implementing, and troubleshooting enterprise networks with a focus on routing, switching, and automation.</p>
 
