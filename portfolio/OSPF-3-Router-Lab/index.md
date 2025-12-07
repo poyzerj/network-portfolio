@@ -1,5 +1,5 @@
 ---
-permalink: /projects/OSPF-3-Router-Lab/
+permalink: /portfolio/OSPF-3-Router-Lab/
 title: "OSPF - 3 Router Lab"
 layout: single
 author_profile: true
