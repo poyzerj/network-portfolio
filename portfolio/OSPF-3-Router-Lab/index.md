@@ -31,7 +31,7 @@ author_profile: true
 
 .lab-content pre {
   font-size: 15px;
-  background-color: #ffffff;
+  background-color: #f6f8fa;
   padding: 16px;
   border-radius: 6px;
   overflow-x: auto;
