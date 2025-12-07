@@ -82,13 +82,13 @@ author_profile: true
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0;
-  border: 1px solid #e0e0e0;
+  border: none;
   outline: none;
   width: 90%;
   max-width: 900px;
   max-height: 80vh;
   border-radius: 8px;
-  box-shadow: none;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
   overflow: hidden;
