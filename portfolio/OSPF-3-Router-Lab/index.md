@@ -51,6 +51,7 @@ author_profile: true
 .lab-content a {
   color: #0066cc;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .lab-content a:hover {
@@ -59,6 +60,86 @@ author_profile: true
 
 .lab-content strong {
   font-weight: bold;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.modal-header {
+  padding: 16px 20px;
+  background-color: #f6f8fa;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+}
+
+.modal-body {
+  padding: 20px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.modal-body pre {
+  background-color: #f6f8fa;
+  padding: 16px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.modal-body code {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
 }
 </style>
 
@@ -105,9 +186,9 @@ ping &lt;loopback-address&gt;
 
 <h2>📁 Configuration Files</h2>
 <ul>
-  <li><a href="https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/portfolio/OSPF-3-Router-Lab/R1.txt">R1.txt</a> – OSPF and IP configuration</li>
-  <li><a href="https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/portfolio/OSPF-3-Router-Lab/R2.txt">R2.txt</a> – OSPF and IP configuration</li>
-  <li><a href="https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/portfolio/OSPF-3-Router-Lab/R3.txt">R3.txt</a> – OSPF and IP configuration</li>
+  <li><a onclick="openConfigModal('R1', 'https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/projects/OSPF-3-Router-Lab/R1.txt')">R1.txt</a> – OSPF and IP configuration</li>
+  <li><a onclick="openConfigModal('R2', 'https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/projects/OSPF-3-Router-Lab/R2.txt')">R2.txt</a> – OSPF and IP configuration</li>
+  <li><a onclick="openConfigModal('R3', 'https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/projects/OSPF-3-Router-Lab/R3.txt')">R3.txt</a> – OSPF and IP configuration</li>
 </ul>
 
 <h2>📝 Notes / Lessons Learned</h2>
@@ -119,3 +200,68 @@ ping &lt;loopback-address&gt;
 </ul>
 
 </div>
+
+<!-- Modal -->
+<div id="configModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="modalTitle">Configuration File</h3>
+      <span class="close" onclick="closeConfigModal()">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div id="modalContent" class="loading">Loading...</div>
+    </div>
+  </div>
+</div>
+
+<script>
+function openConfigModal(routerName, url) {
+  const modal = document.getElementById('configModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalContent = document.getElementById('modalContent');
+  
+  modalTitle.textContent = routerName + '.txt - Configuration';
+  modalContent.innerHTML = '<div class="loading">Loading configuration...</div>';
+  modal.style.display = 'block';
+  
+  fetch(url)
+    .then(response => response.text())
+    .then(data => {
+      modalContent.innerHTML = '<pre><code>' + escapeHtml(data) + '</code></pre>';
+    })
+    .catch(error => {
+      modalContent.innerHTML = '<div class="loading">Error loading configuration file.</div>';
+      console.error('Error:', error);
+    });
+}
+
+function closeConfigModal() {
+  document.getElementById('configModal').style.display = 'none';
+}
+
+function escapeHtml(text) {
+  const map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  };
+  return text.replace(/[&<>"']/g, m => map[m]);
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+  const modal = document.getElementById('configModal');
+  if (event.target == modal) {
+    closeConfigModal();
+  }
+}
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeConfigModal();
+  }
+});
+</script>
