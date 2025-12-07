@@ -82,12 +82,12 @@ author_profile: true
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0;
-  border: 1px solid #888;
+  border: none;
   width: 90%;
   max-width: 900px;
   max-height: 80vh;
   border-radius: 8px;
-  box-shadow: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   display: flex;
   flex-direction: column;
 }
