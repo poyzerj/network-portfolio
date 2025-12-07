@@ -105,9 +105,9 @@ ping &lt;loopback-address&gt;
 
 <h2>📁 Configuration Files</h2>
 <ul>
-  <li><a href="https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/projects/OSPF-3-Router-Lab/R1.txt">R1.txt</a> – OSPF and IP configuration</li>
-  <li><a href="https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/projects/OSPF-3-Router-Lab/R2.txt">R2.txt</a> – OSPF and IP configuration</li>
-  <li><a href="https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/projects/OSPF-3-Router-Lab/R3.txt">R3.txt</a> – OSPF and IP configuration</li>
+  <li><a href="https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/portfolio/OSPF-3-Router-Lab/R1.txt">R1.txt</a> – OSPF and IP configuration</li>
+  <li><a href="https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/portfolio/OSPF-3-Router-Lab/R2.txt">R2.txt</a> – OSPF and IP configuration</li>
+  <li><a href="https://raw.githubusercontent.com/poyzerj/network-portfolio/refs/heads/main/portfolio/OSPF-3-Router-Lab/R3.txt">R3.txt</a> – OSPF and IP configuration</li>
 </ul>
 
 <h2>📝 Notes / Lessons Learned</h2>
