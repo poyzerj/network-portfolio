@@ -95,7 +95,7 @@ author_profile: true
 .modal-header {
   padding: 16px 20px;
   background-color: #ffffff;
-  border-bottom: 1px solid #ddd;
+  border-bottom: none;
   border-radius: 8px 8px 0 0;
   display: flex;
   justify-content: space-between;
