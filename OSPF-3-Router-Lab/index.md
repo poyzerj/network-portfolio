@@ -1,3 +1,10 @@
+---
+permalink: /OSPF-2-Router-Lab/
+title: "OSPF - 3 Router Lab"
+layout: single
+author_profile: true
+---
+
 # OSPF - 3 Router Lab
 
 ## 📌 Overview
