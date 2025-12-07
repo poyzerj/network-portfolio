@@ -73,21 +73,20 @@ author_profile: true
   overflow: hidden;
   background-color: rgba(0,0,0,0);
   padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-content {
   background-color: #ffffff;
   position: relative;
-  top: 0;
-  left: 0;
-  transform: none;
-  margin: auto;
   padding: 0;
   border: none;
   outline: none;
   width: 100%;
   max-width: 900px;
-  max-height: calc(100vh - 80px);
+  max-height: 100%;
   border-radius: 8px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.2);
   display: flex;
@@ -257,7 +256,7 @@ function openConfigModal(routerName, url) {
   
   modalTitle.textContent = routerName + '.txt - Configuration';
   modalContent.innerHTML = '<div class="loading">Loading configuration...</div>';
-  modal.style.display = 'block';
+  modal.style.display = 'flex';
   
   fetch(url)
     .then(response => response.text())
