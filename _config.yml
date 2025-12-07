@@ -28,7 +28,8 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://poyzerj.com"
-
+atom_feed:
+  hide: true
 # Site Footer
 footer:
   links:
