@@ -1,8 +1,10 @@
 ---
-title: "Projects"
+"Projects"
 ---
 
-Hands-on network engineering labs and real-world projects.
+Future projects will be documented here:
 
-- [OSPF 3-Router Lab](/projects/ospf-3-router-lab/)
-
+- Network automation with Python
+- BGP labs
+- Ansible provisioning
+- Firewall rule management
