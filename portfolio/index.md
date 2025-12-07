@@ -35,8 +35,6 @@ author_profile: true
 
 <div class="projects-content">
 
-<h2>Featured Projects</h2>
-
 <p>Here are some of my networking projects and labs:</p>
 
 <ul>
