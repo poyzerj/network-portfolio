@@ -2,7 +2,7 @@
 layout: splash
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/network-header.jpg
+  overlay_image: /assets/images/network-banner.jpg
 excerpt: "Routing, Switching, Cloud Networking & Automation"
 ---
 
